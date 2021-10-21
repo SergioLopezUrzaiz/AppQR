@@ -18,12 +18,14 @@ struct ContentView: View {
         NavigationView {
             VStack {
                 TextField("Cantidad", text: $cantidad)
+                    .frame(width: 300)
                     .textFieldStyle(RoundedBorderTextFieldStyle())
                     .keyboardType(.numberPad)
                 NavigationLink(destination: GeneratedQRView(cantidad: cantidad)) {
                     Image(systemName: "plus.square")
                         .resizable()
                         .frame(width: 50, height: 50)
+                        .padding(20)
                 }
             }
             .navigationBarTitle("Generador", displayMode: .inline)
