@@ -26,7 +26,9 @@ struct ContentView: View {
                         .resizable()
                         .frame(width: 50, height: 50)
                         .padding(20)
-                }
+                }.simultaneousGesture(TapGesture().onEnded {
+                    UIApplication.shared.endEditing()
+                })
             }
             .navigationBarTitle("Generador", displayMode: .inline)
         }
