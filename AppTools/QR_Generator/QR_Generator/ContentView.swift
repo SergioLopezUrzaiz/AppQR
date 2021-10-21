@@ -26,7 +26,7 @@ struct ContentView: View {
                         .frame(width: 50, height: 50)
                 }
             }
-            .navigationBarTitle("Ingresa la cantidad")
+            .navigationBarTitle("Generador", displayMode: .inline)
         }
     }
     
