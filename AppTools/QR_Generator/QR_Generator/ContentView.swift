@@ -11,17 +11,19 @@ import CoreImage.CIFilterBuiltins
 struct ContentView: View {
     
     @State private var showingAlert = false
+    @State var nombre: String = ""
     @State var cantidad: String = ""
     @State var num: String = ""
     
     var body: some View {
         NavigationView {
             VStack {
+                
                 TextField("Cantidad", text: $cantidad)
                     .frame(width: 300)
                     .textFieldStyle(RoundedBorderTextFieldStyle())
                     .keyboardType(.numberPad)
-                NavigationLink(destination: GeneratedQRView(cantidad: cantidad)) {
+                NavigationLink(destination: GeneratedQRView(username: cantidad)) {
                     Image(systemName: "plus.square")
                         .resizable()
                         .frame(width: 50, height: 50)

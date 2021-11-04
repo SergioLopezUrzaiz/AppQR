@@ -9,28 +9,19 @@ import SwiftUI
 
 struct GeneratedQRView: View {
     
-    var cantidad: String
+    var username: String
     
     let context = CIContext()
     let filter = CIFilter.qrCodeGenerator()
-    @State var id = UUID().uuidString
     
     var body: some View {
         VStack {
-            Image(uiImage: generateQRCode(from:"\(id)%\(cantidad)"))
+            Image(uiImage: generateQRCode(from:"\0\(username)"))
                         .interpolation(.none)
                         .resizable()
                         .scaledToFit()
                         .frame(width: 300, height: 300)
         }
-        .onAppear {
-            id = UUID().uuidString
-            uploadToDatabase(id: id, cantidad: cantidad)
-        }
-    }
-    
-    func uploadToDatabase(id: String, cantidad: String) {
-        // Codigo que sube a base de datos
     }
     
     func generateQRCode(from string: String) -> UIImage {
@@ -51,6 +42,6 @@ struct GeneratedQRView: View {
 
 struct GeneratedQRView_Previews: PreviewProvider {
     static var previews: some View {
-        GeneratedQRView(cantidad: "50")
+        GeneratedQRView(username: "A00827462")
     }
 }
