@@ -12,7 +12,7 @@ struct QrCodeScannerView: UIViewRepresentable {
     
     var supportedBarcodeTypes: [AVMetadataObject.ObjectType] = [.qr]
     typealias UIViewType = CameraPreview
-    
+      
     private let session = AVCaptureSession()
     private let delegate = QrCodeCameraDelegate()
     private let metadataOutput = AVCaptureMetadataOutput()
@@ -111,4 +111,10 @@ struct QrCodeScannerView: UIViewRepresentable {
         uiView.setContentHuggingPriority(.defaultLow, for: .horizontal)
     }
     
+}
+
+struct QRCodeScannerView_Previews: PreviewProvider {
+    static var previews: some View {
+        QrCodeScannerView()
+    }
 }

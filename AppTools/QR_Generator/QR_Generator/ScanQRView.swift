@@ -30,16 +30,17 @@ struct ScanQRView: View {
                 .padding(.vertical, 20)
                 
                 Spacer()
-                HStack {
-                    Button(action: {
-                        self.viewModel.torchIsOn.toggle()
-                    }, label: {
-                        Image(systemName: self.viewModel.torchIsOn ? "bolt.fill" : "bolt.slash.fill")
-                            .imageScale(.large)
-                            .foregroundColor(self.viewModel.torchIsOn ? Color.yellow : Color.blue)
-                            .padding()
-                    })
-                }
+                // BOTON PARA FLASH
+//                HStack {
+//                    Button(action: {
+//                        self.viewModel.torchIsOn.toggle()
+//                    }, label: {
+//                        Image(systemName: self.viewModel.torchIsOn ? "bolt.fill" : "bolt.slash.fill")
+//                            .imageScale(.large)
+//                            .foregroundColor(self.viewModel.torchIsOn ? Color.yellow : Color.blue)
+//                            .padding()
+//                    })
+//                }
                 .background(Color.white)
                 .cornerRadius(10)
                 
