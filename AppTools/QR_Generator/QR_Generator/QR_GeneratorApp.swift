@@ -11,7 +11,7 @@ import SwiftUI
 struct QR_GeneratorApp: App {
     var body: some Scene {
         WindowGroup {
-            HomeView(username: "A00827462")
+            HomeView()
         }
     }
 }

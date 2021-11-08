@@ -16,7 +16,7 @@ struct GeneratedQRView: View {
     
     var body: some View {
         VStack {
-            Image(uiImage: generateQRCode(from:"\0\(username)"))
+            Image(uiImage: generateQRCode(from:"\(username)"))
                         .interpolation(.none)
                         .resizable()
                         .scaledToFit()

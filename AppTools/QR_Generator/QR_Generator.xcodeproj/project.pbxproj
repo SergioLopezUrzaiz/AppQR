@@ -13,11 +13,7 @@
 		FB07B650271DBA4F0056A5E5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB07B64F271DBA4F0056A5E5 /* Preview Assets.xcassets */; };
 		FB6E767B2721C4BD00862725 /* GeneratedQRView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB6E767A2721C4BD00862725 /* GeneratedQRView.swift */; };
 		FB6E767D27303E8B00862725 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB6E767C27303E8B00862725 /* HomeView.swift */; };
-		FB6E76A6273432B100862725 /* ScanQRView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB6E76A5273432B100862725 /* ScanQRView.swift */; };
 		FB6E76A92734335D00862725 /* CodeScanner in Frameworks */ = {isa = PBXBuildFile; productRef = FB6E76A82734335D00862725 /* CodeScanner */; };
-		FB6E76AB2734393600862725 /* ScannerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB6E76AA2734393600862725 /* ScannerViewModel.swift */; };
-		FB6E76AD273439AE00862725 /* QRCodeCameraDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB6E76AC273439AD00862725 /* QRCodeCameraDelegate.swift */; };
-		FB6E76AF273439C800862725 /* CameraPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB6E76AE273439C800862725 /* CameraPreview.swift */; };
 		FB6E76B127343A3500862725 /* QRCodeScannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB6E76B027343A3500862725 /* QRCodeScannerView.swift */; };
 /* End PBXBuildFile section */
 
@@ -30,10 +26,6 @@
 		FB07B651271DBA4F0056A5E5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FB6E767A2721C4BD00862725 /* GeneratedQRView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneratedQRView.swift; sourceTree = "<group>"; };
 		FB6E767C27303E8B00862725 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
-		FB6E76A5273432B100862725 /* ScanQRView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanQRView.swift; sourceTree = "<group>"; };
-		FB6E76AA2734393600862725 /* ScannerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScannerViewModel.swift; sourceTree = "<group>"; };
-		FB6E76AC273439AD00862725 /* QRCodeCameraDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCodeCameraDelegate.swift; sourceTree = "<group>"; };
-		FB6E76AE273439C800862725 /* CameraPreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraPreview.swift; sourceTree = "<group>"; };
 		FB6E76B027343A3500862725 /* QRCodeScannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCodeScannerView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -71,11 +63,7 @@
 				FB07B648271DBA4C0056A5E5 /* QR_GeneratorApp.swift */,
 				FB07B64A271DBA4C0056A5E5 /* ContentView.swift */,
 				FB6E767C27303E8B00862725 /* HomeView.swift */,
-				FB6E76A5273432B100862725 /* ScanQRView.swift */,
 				FB6E76B027343A3500862725 /* QRCodeScannerView.swift */,
-				FB6E76AA2734393600862725 /* ScannerViewModel.swift */,
-				FB6E76AC273439AD00862725 /* QRCodeCameraDelegate.swift */,
-				FB6E76AE273439C800862725 /* CameraPreview.swift */,
 				FB6E767A2721C4BD00862725 /* GeneratedQRView.swift */,
 				FB07B64C271DBA4F0056A5E5 /* Assets.xcassets */,
 				FB07B651271DBA4F0056A5E5 /* Info.plist */,
@@ -168,13 +156,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				FB6E767B2721C4BD00862725 /* GeneratedQRView.swift in Sources */,
-				FB6E76AF273439C800862725 /* CameraPreview.swift in Sources */,
-				FB6E76AB2734393600862725 /* ScannerViewModel.swift in Sources */,
 				FB6E767D27303E8B00862725 /* HomeView.swift in Sources */,
-				FB6E76A6273432B100862725 /* ScanQRView.swift in Sources */,
 				FB6E76B127343A3500862725 /* QRCodeScannerView.swift in Sources */,
 				FB07B64B271DBA4C0056A5E5 /* ContentView.swift in Sources */,
-				FB6E76AD273439AE00862725 /* QRCodeCameraDelegate.swift in Sources */,
 				FB07B649271DBA4C0056A5E5 /* QR_GeneratorApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -305,6 +289,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"QR_Generator/Preview Content\"";
+				DEVELOPMENT_TEAM = JL4L79WG69;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = QR_Generator/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -326,6 +311,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"QR_Generator/Preview Content\"";
+				DEVELOPMENT_TEAM = JL4L79WG69;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = QR_Generator/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;

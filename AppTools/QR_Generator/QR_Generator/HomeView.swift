@@ -9,7 +9,7 @@ import SwiftUI
 
 struct HomeView: View {
     
-    var username: String = "A00827462"
+    var username: String = "Hambre Cero"
     
     var body: some View {
         NavigationView {
@@ -17,7 +17,7 @@ struct HomeView: View {
                 NavigationLink(destination: GeneratedQRView(username: username)) {
                     Text("Generar QR")
                 }
-                NavigationLink(destination: ScanQRView()) {
+                NavigationLink(destination: QrCodeScannerView()) {
                     Text("Escanear QR")
                 }
             }
